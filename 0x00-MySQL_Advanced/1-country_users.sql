@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS users (
 	-- User's Email address (maximum 255 characters)
 	email varchar(255) NOT NULL UNIQUE,
 	-- User's Name (maximum 255 characters)
-	name varchar(255)
+	name varchar(255),
 	-- Enumeration of selected countries 
 	country ENUM('US', 'CO', 'TN') DEFAULT 'US' NOT NULL
 )
