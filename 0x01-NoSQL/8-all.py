@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-""" A script to list all documents in a collection"""
+''' A function that inserts a new document in a collection based on kwargs'''
 
-def list_all(mongo_collection):
-    return [item for item in mongo_collection.find()]
+
+def insert_school(mongo_collection, **kwargs):
+    ''' insert new document into a collection '''
+    result = mongo_collection.insert_one(kwargs).inserted_id
+    return result
