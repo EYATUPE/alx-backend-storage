@@ -1,0 +1,2 @@
+// A script to list all documents in a give database i.e school
+db.school.find()
